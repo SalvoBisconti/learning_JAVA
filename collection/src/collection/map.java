@@ -1,5 +1,6 @@
 package collection;
 
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.TreeMap;
 
@@ -57,6 +58,19 @@ public class map {
 		System.out.println(cars); // OUTPUT -> FIAT FERRARI LAMBO TESLA
 		
 
+		HashMap<String, String[]> authors = new HashMap<>();
+		String[] firstAuth = {"a","b","c"};
+		String[] secondAuth = {"d","e","f"};
+		String[] thirdAuth = {"g","h","i"};
+		
+		authors.put("Autore 1", firstAuth);
+		authors.put("Autore 2", secondAuth);
+		authors.put("Autore 3", thirdAuth);
+		
+		authors.forEach((key, value) -> System.out.println("Autore: " + key + " libri: " + Arrays.toString(value)));
+
+
+		
 
 	}
 
