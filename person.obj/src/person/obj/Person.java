@@ -62,4 +62,9 @@ public class Person {
 		return "La persona si chiama "+name+" "+surname+" ed ha "+age+ " anni";
 	}
 	
+	@Override
+	public boolean equals(Object obj) { 
+		return this.age == ((Person)obj).age && this.adult == ((Person)obj).adult;
+	}
+	
 }

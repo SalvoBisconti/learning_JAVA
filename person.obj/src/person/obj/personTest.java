@@ -19,6 +19,7 @@ public class personTest {
 		
 		//CON COSTRUTTORE CUSTOM
 		
+		Person firstPerson =new Person ("Naruto", "Uzumaki", 32);
 		Person secondPerson =new Person ("Kakashi", "Hatake", 32);
 		secondPerson.toSleep();
 		
@@ -29,6 +30,8 @@ public class personTest {
 		System.out.println("Peso: " + secondPerson.getWeight());
 		
 		System.out.println(secondPerson.toString());
+		
+		System.out.println(firstPerson.equals(secondPerson));
 	}
 
 }
