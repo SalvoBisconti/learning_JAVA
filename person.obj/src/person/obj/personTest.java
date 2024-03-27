@@ -19,8 +19,8 @@ public class personTest {
 		
 		//CON COSTRUTTORE CUSTOM
 		
-		Person firstPerson =new Person ("Naruto", "Uzumaki", 32);
-		Person secondPerson =new Person ("Kakashi", "Hatake", 32);
+		Person firstPerson =new Person ("Naruto", "Uzumaki", 17, false, 'm', 56.80);
+		Person secondPerson =new Person ("Kakashi", "Hatake", 32, true, 'm', 70.20);
 		secondPerson.toSleep();
 		
 		secondPerson.setGender('m');

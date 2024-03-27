@@ -30,12 +30,16 @@ public class Person {
 	}
 	
 	//COSTRUTTORE -> non ritorna nulla neanche void
-	public Person(String name, String surname, int age) {
+	public Person(String name, String surname, int age, boolean adult, char gender, double weight) {
+		super();
 		this.name = name;
 		this.surname = surname;
-		this.age= age;
+		this.age = age;
+		this.adult = adult;
+		this.gender = gender;
+		this.weight = weight;
 	}
-	
+
 	//METODI SET -> assegnano un valore agli attributi
 	//METODI GET -> ritornano il valore degli attributi
 	
@@ -57,6 +61,8 @@ public class Person {
 	
 	//OVERIDE DEL METODO TOSTRING (GIA' ESISTENTE)
 	
+
+
 	@Override
 	public String toString() {
 		return "La persona si chiama "+name+" "+surname+" ed ha "+age+ " anni";
